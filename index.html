@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="cc.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
+    </header>
+    <div class="back"></div>
+    <div class="container">
+        <div class="content">
+            <div class="tit">
+                <i class='bx bxl-medium-old'></i> <h2>GoGreen</h2>
+            </div>
+            <div class="para">
+                <h3>WELCOME</h3>
+                <span>To My New Website</span>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum natus in accusantium quia delectus voluptatum, soluta aliquam non </p>
+                </div>
+            </div>
+        </div>
+        <div class="log-regbox">
+            <p>User <input type="text" id="a"></p>
+            <p>Password <input type="password" id="b"></p>
+            <button type="submit" onclick="log()">Login</button>
+        </div>
+    </div>
+    <script>
+        function log()
+        {
+            var user=document.getElementById("a").value;
+            var pass=document.getElementById("b").value;
+            if(user=="Admin" && pass=="admin@123")
+            {
+                alert("Login Success");
+                window.open("new.html","_self");
+            }
+            else
+            {
+                alert("Login Failed");
+            }
+        }
+    </script>
+</body>
+</html>
